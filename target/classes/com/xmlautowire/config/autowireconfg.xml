@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+	<bean id="stuSubjects" class="com.xmlautowire.entity.Subject">
+	
+		<property name="sub1" value="marathi"></property>
+		<property name="sub2" value="english"></property>
+		<property name="sub3" value="hindi"></property>
+		
+		
+	</bean>
+        
+    <bean id="studentid" class="com.xmlautowire.entity.Student" autowire="byType">
+
+		<property name="name" value="ganesh"></property>
+		<property name="marks" value="100"></property>
+		
+	</bean>
+        
+ </beans>
